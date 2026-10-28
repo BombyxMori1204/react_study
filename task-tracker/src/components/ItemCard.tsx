@@ -1,19 +1,15 @@
 type ItemProps = {
-    number: string,
-    h1: number,
-    h2: number,
+    number: number,
+    h1: string,
+    h2: string,
 }
 
-export default function TaskItem({ number, h1, h2 }: ItemProps){
-    return <div className="item_card">
-        <div className="item_num">
-            {number}
+export default function ItemCard({ number, h1, h2 }: ItemProps) {
+    return (
+        <div className="item_card">
+            <div className="item_num">{number}</div>
+            <div className="item_h1">{h1}</div>
+            <div className="item_h2">{h2}</div>
         </div>
-        <div className="item_h1">
-            {h1}
-        </div>
-        <div className="item_h2">
-            {h2}
-        </div>
-    </div>
+    )
 }
