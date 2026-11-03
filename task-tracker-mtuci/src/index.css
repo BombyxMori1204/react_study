@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  --form-list-color: #252525;
+  --form-list-background: #f7f7f7;
+  --header-color: #24324a;
+  --header-background: #eaf2ff;
+  --header-border: #cbdcf5;
+  --item-color: #29364d;
+  --item-background: #f8fbff;
+  --item-border: #cfddf0;
+}
+
+.main.theme-dark {
+  --form-list-color: #f5f5f5;
+  --form-list-background: #202124;
+  --header-color: #edf4ff;
+  --header-background: #182235;
+  --header-border: #34445f;
+  --item-color: #e9f1ff;
+  --item-background: #26334a;
+  --item-border: #415576;
+}
+
+.add-form-light,
+.todo-list-light {
+  color: var(--form-list-color);
+  background-color: var(--form-list-background);
+}
+
+.add-form-dark,
+.todo-list-dark {
+  color: var(--form-list-color);
+  background-color: var(--form-list-background);
+}
+
+header {
+  height: 72px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--header-color);
+  background-color: var(--header-background);
+  border-bottom: 1px solid var(--header-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.header-light {
+  color: var(--header-color);
+  background-color: var(--header-background);
+  border-color: var(--header-border);
+}
+
+.header-dark {
+  color: var(--header-color);
+  background-color: var(--header-background);
+  border-color: var(--header-border);
+}
+
+.todo-list,
+.todo-list-light,
+.todo-list-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.todo-item,
+.todo-item-light,
+.todo-item-dark {
+  padding: 16px 18px;
+  margin: 0;
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.todo-item-light {
+  color: var(--item-color);
+  background-color: var(--item-background);
+  border-color: var(--item-border);
+}
+
+.todo-item-dark {
+  color: var(--item-color);
+  background-color: var(--item-background);
+  border-color: var(--item-border);
+}
+
+.add-form,
+.add-form-light,
+.add-form-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 80px;
+  border-bottom: 1px solid #e5e5e5;
+}
